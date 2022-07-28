@@ -6,8 +6,9 @@
     --cor0: white;
     --cor1: black;
     --cor2: #373446;
-    --cor3: #191629;
+    --cor3: #b8acff;
     --cor4: #18142B;
+    --cor5: #18142b96;
     --fonte_titulo: 'Righteous', cursive;
     --fonte_padrao: arial, verdana, helvetica, sans-serif;
 }   
@@ -23,6 +24,9 @@
 
 header{
     background-color: var(--cor4);
+    position: fixed;
+    width: 100%;
+    right: inherit;
 }
 
 li{
@@ -115,10 +119,63 @@ a{
     .nav-menu.active{
         left: 0;
     }
+
 }
 
 /*Conteúdo Homepage*/
 
-.section{
-    text-align: center;
+section{
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte_padrao);
+    font-size: 2.5vw;
+}
+
+.image{
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    background-color: var(--cor2);
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.411);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center; 
+}
+
+.image > h1{
+    color:white;
+    display: inline-block;
+    background-color: #18142baf;
+    box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    font-size: 1.25em;
+    font-family: var(--fonte_titulo);
+    border-radius: 5px;
+}
+
+#img01{
+    background-image: url(imagens/img\ 01\ modificada.jpg);
+    background-position: center center;
+}
+
+.normal{
+    background-color: var(--cor4);
+    box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
+    padding: 20vh;
+}
+
+.normal > p{
+    padding: 7vh;
+    border-radius: 7px;
+    background-color: var(--cor3);
+    color: var(--cor4);
+    font-size: 1.25rem;
+    font-family: var(--fonte_titulo);
+    text-align: left;
+    box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
+}
+
+#img02{
+    background-image: url(imagens/automacao\ resid\ 1.jpg);
+    background-position: center bottom;   
 }
