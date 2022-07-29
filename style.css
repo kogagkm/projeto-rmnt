@@ -5,7 +5,7 @@
 :root{
     --cor0: white;
     --cor1: black;
-    --cor2: #373446a9;
+    --cor2: #110066b7;
     --cor3: #b8acff;
     --cor4: #18142B;
     --cor5: #18142b96;
@@ -65,9 +65,11 @@ a{
 }
 
 .nav-link:hover{
-    background-color: var(--cor2);
+    background-color: var(--cor3);
     padding: 7px;
     font-size: 1.25rem;
+    text-decoration: underline;
+    border-radius: 7px;
 }
 
 .hamburguer{
@@ -128,7 +130,6 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte_padrao);
-    font-size: 2.5vw;
 }
 
 .image{
@@ -139,6 +140,7 @@ section{
     background-size: cover;
     background-attachment: fixed;
     text-align: center; 
+    font-size: 2.5vw;
 }
 
 .image > h1{
@@ -148,9 +150,26 @@ section{
     box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
     padding: 5px;
     text-shadow: 1px 1px 0px black;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-family: var(--fonte_titulo);
     border-radius: 5px;
+}
+
+.image > a{
+    color:white;
+    display: inline-block;
+    background-color: #18142baf;
+    box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    font-size: 1.5em;
+    font-family: var(--fonte_titulo);
+    border-radius: 5px;
+}
+
+.image > a:hover{
+    font-size: 1.7em;
+    text-decoration: underline;
 }
 
 #img01{
@@ -159,34 +178,42 @@ section{
 }
 
 .normal{
-    background-color: var(--cor4);
+    background-image: linear-gradient(to top, var(--cor3), var(--cor4));
     box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
-    padding: 10vh;
+    padding: 4vh;
+    font-size: 1.8vw;
 }
 
-.normal > p{
-    padding: 7vh;
+.texto-about{
+    padding: 5vh 7vh;
     border-radius: 7px;
-    background-color: var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
     color: var(--cor4);
-    font-size: 1.25rem;
     font-family: var(--fonte_padrao);
+    font-weight: bold;
     text-align: left;
     box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
 }
 
+.texto-about > p{
+    padding-bottom: 35px;
+}
+
 .link-text{
     display: flex;
-    margin: auto;
-    background-color: var(--cor2);
-    color: var(--cor4);
-    font-family: var(--fonte_padrao);
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--cor4), var(--cor2), transparent);
+    color: white;
+    font-family: var(--fonte_titulo);
     border-radius: 5px;
+    box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.281);
 }
 
 .link-text:hover{
     text-decoration: underline;
-    font-weight: bolder;
+    font-size: 1.25em;
+    padding: 5px;
 }
 
 #img02{
@@ -201,5 +228,5 @@ section{
 
 .separador{
     padding-top: 7vh;
-    background-color: var(--cor4);
+    background-image: linear-gradient(to top, var(--cor3), var(--cor4));
 }
