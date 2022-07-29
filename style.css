@@ -5,7 +5,7 @@
 :root{
     --cor0: white;
     --cor1: black;
-    --cor2: #373446;
+    --cor2: #373446a9;
     --cor3: #b8acff;
     --cor4: #18142B;
     --cor5: #18142b96;
@@ -132,8 +132,8 @@ section{
 }
 
 .image{
-    padding-top: 50vh;
-    padding-bottom: 50vh;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
     background-color: var(--cor2);
     box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.411);
     background-size: cover;
@@ -161,7 +161,7 @@ section{
 .normal{
     background-color: var(--cor4);
     box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
-    padding: 20vh;
+    padding: 10vh;
 }
 
 .normal > p{
@@ -170,12 +170,36 @@ section{
     background-color: var(--cor3);
     color: var(--cor4);
     font-size: 1.25rem;
-    font-family: var(--fonte_titulo);
+    font-family: var(--fonte_padrao);
     text-align: left;
     box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
+}
+
+.link-text{
+    display: flex;
+    margin: auto;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font-family: var(--fonte_padrao);
+    border-radius: 5px;
+}
+
+.link-text:hover{
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 #img02{
     background-image: url(imagens/automacao\ resid\ 1.jpg);
     background-position: center bottom;   
+}
+
+#img03{
+    background-image: url(imagens/audio\ e\ video\ 1\ modificada.jpg);
+    background-position: center center;  
+}
+
+.separador{
+    padding-top: 7vh;
+    background-color: var(--cor4);
 }
