@@ -181,7 +181,7 @@ section{
     background-image: linear-gradient(to top, var(--cor3), var(--cor4));
     box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.445);
     padding: 4vh;
-    font-size: 1.8vw;
+    font-size: 2.5vh;
 }
 
 .texto-about{
@@ -226,7 +226,34 @@ section{
     background-position: center center;  
 }
 
+#img04{
+    background-image: url(imagens/aspiracao\ central\ 2\ modificada.jpg);
+    background-position: center center; 
+}
+
+#img05{
+    background-image: url(imagens/camera\ 1\ modificada.jpg);
+    background-position: center center; 
+}
+
+#img06{
+    background-image: url(imagens/rede\ 2\ modificada.jpg);
+    background-position: center center; 
+}
+
 .separador{
     padding-top: 7vh;
     background-image: linear-gradient(to top, var(--cor3), var(--cor4));
+}
+
+footer{
+    display: flex;
+    padding: 8vh;
+    background-color: var(--cor4);
+    box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.534);
+}
+
+.logo{
+    font-size: 2rem;
+    font-family: var(--fonte_titulo);
 }
